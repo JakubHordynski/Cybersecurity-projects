@@ -113,6 +113,7 @@ cd Cybersecurity-projects/Soc-email-triage-workbench
 
 # 3. Open index.html directly in any modern browser, or start a local static server:
 npx serve .
+```
 
 ---
 
