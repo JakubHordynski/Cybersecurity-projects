@@ -100,19 +100,19 @@ soc-email-triage-workbench/
 
 ### Option 1: Live Interactive Demo (GitHub Pages)
 Run the workbench directly in your browser without installing anything:
-> 🔗 **[Launch SOC Communications Triage Workbench]([https://JakubHordynski.github.io/Cybersecurity-projects/Soc-email-triage-workbench/](https://JakubHordynski.github.io/Cybersecurity-projects/Soc-email-triage-workbench/))**  
+> 🔗 **[Launch SOC Communications Triage Workbench](https://JakubHordynski.github.io/Cybersecurity-projects/Soc-email-triage-workbench/)**
 
 ### Option 2: Run Locally
 ```bash
+
 # 1. Clone the repository
 git clone [https://github.com/JakubHordynski/Cybersecurity-projects.git](https://github.com/JakubHordynski/Cybersecurity-projects.git)
 
 # 2. Enter the project folder
-cd Cybersecurity-projects.git
+cd Cybersecurity-projects/Soc-email-triage-workbench
 
 # 3. Open index.html directly in any modern browser, or start a local static server:
 npx serve .
-```
 
 ---
 
