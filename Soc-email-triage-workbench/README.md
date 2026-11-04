@@ -1,4 +1,4 @@
-# 🛡️ SOC Communications Triage Workbench
+# SOC Communications Triage Workbench
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-v15%20Aligned-ef4444.svg)](https://attack.mitre.org/)
@@ -12,7 +12,7 @@ Unlike traditional security awareness quizzes that rely on obvious spelling erro
 
 ---
 
-## 🧠 Project Genesis & Authorship (Domain Expertise + AI-Augmented Engineering)
+## Project Genesis & Authorship (Domain Expertise + AI-Augmented Engineering)
 
 This project was built using a modern **AI-Augmented Engineering ("Vibe Coding")** workflow, combining **human cybersecurity domain direction** with **LLM-assisted front-end implementation**:
 
@@ -26,7 +26,7 @@ This project was built using a modern **AI-Augmented Engineering ("Vibe Coding")
 
 ---
 
-## 🎯 The Problem It Solves
+## The Problem It Solves
 
 In a production enterprise environment, 99% of commodity spam (`SPF: fail` + broken grammar) is automatically dropped at the Secure Email Gateway (Proofpoint, Mimecast, Microsoft Defender for Office 365). 
 
@@ -38,28 +38,28 @@ The incidents that actually land in a **human SOC analyst's queue** are the **am
 
 ---
 
-## ✨ Key Workbench Capabilities
+## Key Workbench Capabilities
 
-### 🖥️ 1. Authentic 3-Pane SIEM / SOAR Console Layout
+### 1. Authentic 3-Pane SIEM / SOAR Console Layout
 * **Column 1 — Shift Incident Queue:** Displays 5 user-reported tickets per shift with neutral transmission channel tags (`CHANNEL: INBOUND EMAIL`, `CHANNEL: CELLULAR SMS`, `CHANNEL: VOIP PBX`), severity classifications, and reporting department metadata.
 * **Column 2 — Artifact Inspection Dock:** Renders rich email envelopes, cellular SMS captures, recorded VoIP call transcripts, and optical QR matrices. Includes a live bottom **URI & Header Inspector Bar** that reveals underlying target URLs, Punycode translations, and decoded QR payloads on hover.
 * **Column 3 — Forensics & Telemetry Drawer:**
   * **Raw Headers & Transport Tab:** Displays raw `RFC 822` email headers, `SMPP` SMS PDU records, and `SIP/2.0 INVITE` VoIP headers (`STIR/SHAKEN` attestation levels). Suspicious header lines are directly clickable as IoC evidence.
   * **Transport & Gateway Hops Tab:** Shows neutral MTA hop telemetry (IP addresses, reverse DNS pointers, TLS cipher suites, and SMTP/SIP response codes) without spoiling the verdict.
 
-### 🔍 2. "Smoking Gun" Forensic Evaluation Engine
+### 2. "Smoking Gun" Forensic Evaluation Engine
 * **Evidence-Based Escalation:** The **Escalate Threat (IoC)** button remains locked until the analyst pins at least one Indicator of Compromise *and* selects a specific attack taxonomy (`SPEAR_PHISHING`, `MASS_PHISHING`, `QUISHING`, `SMISHING`, or `VISHING`).
 * **Real-World Scoring Logic:** You do not need to highlight every single paragraph in a malicious message. Pinning **at least one valid Smoking Gun** (e.g., an IDN Punycode domain `xn--`, a forged `Reply-To` header, or a `.pdf.iso` double extension) + selecting the right attack category yields a verified triage call.
 * **Business Impact Feedback:** Quarantining benign executive or partner traffic triggers a **False Positive Operational Impact** warning, reinforcing the balance between security and business continuity.
 
-### 🔄 3. Stateful Anti-Repetition Procedural Engine
+### 3. Stateful Anti-Repetition Procedural Engine
 * **Balanced Multi-Channel Shifts:** Every 5-ticket shift is procedurally assembled to guarantee cross-channel variety: **1 Cellular SMS**, **1 VoIP Call Transcript**, **1 QR-Code Artifact**, and **2 Inbound Emails**.
 * **36+ Curated Scenarios & History Registry:** A stateful `historyRegistry` tracks seen scenario archetypes across shifts, ensuring zero immediate repetitions as you progress from Day 1 onward.
 * **End-of-Shift Handover Report:** Completing all 5 tickets triggers a comprehensive **SOC Shift Handover Log** modal summarizing shift accuracy, verified calls, and lifetime triage metrics.
 
 ---
 
-## 🗺️ Implemented Threat Taxonomy & MITRE ATT&CK Matrix
+## Implemented Threat Taxonomy & MITRE ATT&CK Matrix
 
 | Vector Category | MITRE ATT&CK ID | Simulated Adversary Tradecraft & Indicators |
 | :--- | :--- | :--- |
@@ -76,7 +76,7 @@ The incidents that actually land in a **human SOC analyst's queue** are the **am
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 The application is architected in clean, modular **Vanilla ES6 JavaScript and CSS3** with zero external runtime dependencies or build-tool overhead:
 
@@ -96,20 +96,19 @@ soc-email-triage-workbench/
 
 ---
 
-## 🚀 Live Demo & Local Installation
+## Live Demo & Local Installation
 
-### 🌐 Option 1: Live Interactive Demo (GitHub Pages)
+### Option 1: Live Interactive Demo (GitHub Pages)
 Run the workbench directly in your browser without installing anything:
-> 🔗 **[Launch SOC Communications Triage Workbench](https://<YOUR-GITHUB-USERNAME>.github.io/<YOUR-REPO-NAME>/)**  
-> *(Replace `<YOUR-GITHUB-USERNAME>` and `<YOUR-REPO-NAME>` with your repository URL once GitHub Pages is enabled)*
+> 🔗 **[Launch SOC Communications Triage Workbench]([https://JakubHordynski.github.io/Cybersecurity-projects/Soc-email-triage-workbench/](https://JakubHordynski.github.io/Cybersecurity-projects/Soc-email-triage-workbench/))**  
 
-### 💻 Option 2: Run Locally
+### Option 2: Run Locally
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/<YOUR-REPO-NAME>.git
+git clone [https://github.com/JakubHordynski/Cybersecurity-projects.git](https://github.com/JakubHordynski/Cybersecurity-projects.git)
 
 # 2. Enter the project folder
-cd <YOUR-REPO-NAME>
+cd Cybersecurity-projects.git
 
 # 3. Open index.html directly in any modern browser, or start a local static server:
 npx serve .
@@ -117,7 +116,7 @@ npx serve .
 
 ---
 
-## 🕹️ Analyst Operating Manual (How to Triage)
+## Analyst Operating Manual (How to Triage)
 
 1. **Select an Incident:** Click any pending ticket (`INC-XXXX`) in the left-hand **Shift Queue**.
 2. **Analyze the Artifact & Telemetry:**
@@ -129,14 +128,6 @@ npx serve .
    * **If Benign:** Ensure no false-positive IoCs are tagged and click **Mark as Benign (Clean)**.
    * **If Malicious:** Pin at least **1 valid Smoking Gun IoC**, select the exact attack type from the dropdown (`Spear Phishing / BEC`, `Mass Phishing`, `Quishing`, `Smishing`, or `VISHING`), and click **Escalate Threat (IoC)**.
 5. **Review Post-Mortem & Handover:** Read the **NIST 800-61** forensic breakdown after each ticket. Once all 5 tickets in a shift are resolved, review your **Shift Handover Report** and click **Clock Out & Begin Next Day**.
-
----
-
-## 🔮 Future Roadmap
-
-* **Interactive Sandbox Detonation Tab:** Simulated dynamic analysis output (process tree, DNS queries, and mutex creation) for attachment-based scenarios.
-* **SIEM Log Query Mini-Console:** Ability to run quick KQL/SPL-style lookups on sender IP addresses or hashes against simulated threat intelligence feeds.
-* **Custom Scenario Builder (JSON Import):** Allow SOC leads and educators to import custom JSON scenario packs for internal team training.
 
 ---
 
