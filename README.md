@@ -4,5 +4,4 @@ A collection of hands-on cybersecurity projects, defensive tooling, and incident
 
 ## Projects in this Repository
 
-1. [Soc-email-triage-workbench](JakubHordynski/Soc-email-triage-workbench)
-   Interactive multi-channel SOC incident response and phishing triage simulator modeling RFC 822 header forensics, IDN Punycode spoofing, Thread Hijacking (BEC), and evasion techniques across Email, SMS, VoIP, and QR codes ([Live Demo]([https://JakubHordynski.github.io/Soc-email-triage-workbench/](https://github.com/JakubHordynski/Soc-email-triage-workbench.git))).# Cybersecurity-projects
+1. **[Soc-email-triage-workbench](https://github.com/JakubHordynski/Soc-email-triage-workbench)** — Interactive multi-channel SOC incident response and phishing triage simulator modeling RFC 822 header forensics, IDN Punycode spoofing, Thread Hijacking (BEC), and evasion techniques across Email, SMS, VoIP, and QR codes ([Live Demo](https://JakubHordynski.github.io/Soc-email-triage-workbench/)).
